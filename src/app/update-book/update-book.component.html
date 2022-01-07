@@ -1,0 +1,10 @@
+<p>update-book works!</p>
+<form (ngSubmit)="updateBookById(id)" >
+  <p>Title:</p>
+  <input type="text" [(ngModel)]="book.title" name="code">
+  <p>Author:</p>
+  <input type="text" [(ngModel)]="book.author" name="name">
+  <p>Description:</p>
+  <input type="text" [(ngModel)]="book.description" name="description">
+  <button>Edit</button>
+</form>

@@ -1,0 +1,18 @@
+<p>delete-book works!</p>
+<form (ngSubmit)="deleteBook()">
+  <table *ngIf="book">
+    <tr>
+      <th>Title:</th>
+      <th>Author:</th>
+      <th>Description:</th>
+    </tr>
+    <tr>
+      <td>{{book.title}}</td>
+      <td>{{book.author}}</td>
+      <td>{{book.description}}</td>
+    </tr>
+  </table>
+  <p>Are you sure Delete?</p>
+  <button>Yes</button>
+  <a routerLink="/list">No</a>
+</form>
